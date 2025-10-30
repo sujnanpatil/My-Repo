@@ -22,8 +22,6 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
 - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
 - **Password:** <inject key="AzureAdUserPassword"></inject>
 
----
-
 ## Task 1: Create your Copilot Studio agent
 
 **Goal:** Create an agent named **Safe Travels** and define its instructions.
@@ -48,9 +46,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
    ```
 6. Click **Save**.
 
-> Screenshot placeholder: ![](../media/lab1-t1-create-agent.png)
-
----
+> Screenshot: ![](../media/lab1-t1-create-agent.png)
 
 ## Task 2: Add Generative answers & connect knowledge
 
@@ -66,9 +62,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
 5. Test a prompt in the **Test** panel (right):  
    - `What is the daily hotel limit in India for Level-2 employees?`
 
-> Screenshot placeholder: ![](../media/lab1-t2-knowledge.png)
-
----
+> Screenshot: ![](../media/lab1-t2-knowledge.png)
 
 ## Task 3: Add tools via agent flows (Trip Lookup / Approvals)
 
@@ -110,7 +104,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
      ```  
    - **Response** → return the compose output → **Save** & **Test**.
 
-> Screenshot placeholder: ![](../media/lab1-t3-flows.png)
+> Screenshot: ![](../media/lab1-t3-flows.png)
 
 ### B. Register flows as tools in Copilot Studio
 1. Return to **Copilot Studio** (<https://copilotstudio.microsoft.com/>) → open **Safe Travels**.  
@@ -120,9 +114,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
 4. Add `RequestTravelApproval` with description: `Submits a travel for approval with amount.`  
 5. Click **Save**.
 
-> Screenshot placeholder: ![](../media/lab1-t3-tools.png)
-
----
+> Screenshot: ![](../media/lab1-t3-tools.png)
 
 ## Task 4: Enable generative orchestration (and multi-agent)
 
@@ -134,9 +126,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
    For expense queries, ask the Expense Helper agent to assist.
    ```
 
-> Screenshot placeholder: ![](../media/lab1-t4-orchestration.png)
-
----
+> Screenshot: ![](../media/lab1-t4-orchestration.png)
 
 ## Task 5: Test & refine
 
@@ -147,9 +137,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
    - Tool `GetTripByEmployee` called → tool `RequestTravelApproval` called  
 4. Adjust **Instructions** or tool **Descriptions** if routing isn’t ideal.
 
-> Screenshot placeholder: ![](../media/lab1-t5-test.png)
-
----
+> Screenshot: ![](../media/lab1-t5-test.png)
 
 ## Task 6: Publish
 
@@ -159,9 +147,7 @@ Create a **Copilot Studio** agent for employee travel (“Safe Travels”), grou
    - **Web app:** copy the web link and share it with pilot users
 3. Validate with a colleague account.
 
-> Screenshot placeholder: ![](../media/lab1-t6-publish.png)
-
----
+> Screenshot: ![](../media/lab1-t6-publish.png)
 
 ## Notes
 - Tight, goal-driven **descriptions** improve orchestration results.  
