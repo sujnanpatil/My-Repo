@@ -22,8 +22,6 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
 - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
 - **Password:** <inject key="AzureAdUserPassword"></inject>
 
----
-
 ## Task 1: Create an Azure AI Search service
 
 **Goal:** Create a search service for HR content.
@@ -37,9 +35,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
    - **Pricing tier:** `Basic` (or higher for semantic)  
 4. **Review + create** → **Create** → wait for deployment.
 
-> Screenshot placeholder: ![](../media/lab2-t1-create-search.png)
-
----
+> Screenshot: ![](../media/lab2-t1-create-search.png)
 
 ## Task 2: Import & index HR content
 
@@ -65,9 +61,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
    - **Schedule:** `Once` → **Submit**  
 6. Validate with **Search explorer** (left nav) → query `"leave balance"` → confirm results.
 
-> Screenshot placeholder: ![](../media/lab2-t2-index.png)
-
----
+> Screenshot: ![](../media/lab2-t2-index.png)
 
 ## Task 3: Create the HR agent & connect Generative answers
 
@@ -85,9 +79,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
    - `What is the maternity leave policy?`  
    - `Where is the benefits handbook?`
 
-> Screenshot placeholder: ![](../media/lab2-t3-agent-knowledge.png)
-
----
+> Screenshot: ![](../media/lab2-t3-agent-knowledge.png)
 
 ## Task 4: Add HR tools/flows
 
@@ -126,9 +118,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
 3. Add `GetBenefitSummary` → **Description:** `Summarizes the user’s benefit plan.`  
 4. **Save**.
 
-> Screenshot placeholder: ![](../media/lab2-t4-tools.png)
-
----
+> Screenshot: ![](../media/lab2-t4-tools.png)
 
 ## Task 5: Safety & evaluation
 
@@ -140,9 +130,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
 4. Back in **Copilot Studio**, refine **Agent → Instructions** to enforce safe, HR-appropriate tone.  
 5. Validate with test prompts (policy lookups, edge cases) and ensure responses cite the correct HR docs.
 
-> Screenshot placeholder: ![](../media/lab2-t5-safety.png)
-
----
+> Screenshot: ![](../media/lab2-t5-safety.png)
 
 ## Task 6: Publish & share
 
@@ -150,9 +138,7 @@ Provision **Azure AI Search**, index HR policies/FAQs, connect it to a **Copilot
 2. Choose **Web app** or **Microsoft Teams**: <https://teams.microsoft.com/>  
 3. Share with HR stakeholders and capture feedback.
 
-> Screenshot placeholder: ![](../media/lab2-t6-publish.png)
-
----
+> Screenshot: ![](../media/lab2-t6-publish.png)
 
 ## Notes
 - Prefer **vector** indexing for RAG-style grounding.  
