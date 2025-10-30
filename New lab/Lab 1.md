@@ -18,8 +18,6 @@ Create a Copilot Studio agent for employee travel (“Safe Travels”), ground i
 - Sample travel policy/FAQ content (PDF/URL/SharePoint)  
 - Permissions to build **Power Automate** flows
 
----
-
 ## Task 1: Create your Copilot Studio agent
 1. Open **Microsoft Copilot Studio** → **Create → Agent** → name it **Safe Travels**.  
 2. In **Instructions**, define scope, tone, boundaries (e.g., *trip queries, approvals, safety guidance*).  
@@ -27,8 +25,6 @@ Create a Copilot Studio agent for employee travel (“Safe Travels”), ground i
 
 **MS Learn reference:** Copilot Studio – Create & manage agents  
 https://learn.microsoft.com/power-platform/copilot-studio/
-
----
 
 ## Task 2: Add Generative answers & connect knowledge
 1. In the agent, open **Knowledge** (or add a **Generative answers** node).  
@@ -38,8 +34,6 @@ https://learn.microsoft.com/power-platform/copilot-studio/
 **MS Learn references:**  
 • Knowledge/Generative answers basics – https://learn.microsoft.com/power-platform/copilot-studio/  
 • Use your data with Azure OpenAI – https://learn.microsoft.com/azure/ai-services/openai/use-your-data
-
----
 
 ## Task 3: Add tools via agent flows (Trip Lookup / Approvals)
 1. In **Power Automate**, create **GetTripByEmployee** (input: EmployeeId; output: Itinerary/Status) → **Save & Publish**.  
@@ -51,7 +45,6 @@ https://learn.microsoft.com/power-platform/copilot-studio/
 • Power Automate overview – https://learn.microsoft.com/power-automate/overview  
 • Add tools/flows to copilots – https://learn.microsoft.com/power-platform/copilot-studio/
 
----
 
 ## Task 4: Enable generative orchestration (and multi-agent)
 1. **Agent → Settings → Generative AI** → turn **Use generative orchestration** **On**.  
@@ -61,8 +54,6 @@ https://learn.microsoft.com/power-platform/copilot-studio/
 **MS Learn reference:** Generative orchestration – concepts & setup  
 https://learn.microsoft.com/power-platform/copilot-studio/
 
----
-
 ## Task 5: Test & refine
 1. Open **Test** to launch the simulator.  
 2. Try compound prompts (e.g., “*Show my Delhi trip and submit for approval*”).  
@@ -71,8 +62,6 @@ https://learn.microsoft.com/power-platform/copilot-studio/
 
 **MS Learn reference:** Create/test agents  
 https://learn.microsoft.com/power-platform/copilot-studio/
-
----
 
 ## Task 6: Publish
 1. Click **Publish** → choose **Web app** or **Microsoft Teams**.  
