@@ -22,8 +22,6 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 - **Email/Username:** <inject key="AzureAdUserEmail"></inject>  
 - **Password:** <inject key="AzureAdUserPassword"></inject>
 
----
-
 ## Task 1: Set up Azure OpenAI & deploy embeddings
 
 **Goal:** Provision Azure OpenAI and create two deployments (chat + embeddings).
@@ -40,9 +38,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
    - **Deployment name:** `embeddings-lab` → **Deploy**
 5. In **Project settings**, note **Endpoint** and **Key** for use in your app.
 
-> Screenshot placeholder: ![](../media/lab3-t1-deployments.png)
-
----
+> Screenshot: ![](../media/lab3-t1-deployments.png)
 
 ## Task 2: Build a vector index in Azure AI Search
 
@@ -66,9 +62,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
    - **Schedule:** Once → **Submit**  
 7. Verify content in **Search explorer** with queries like `"return policy"`.
 
-> Screenshot placeholder: ![](../media/lab3-t2-index.png)
-
----
+> Screenshot: ![](../media/lab3-t2-index.png)
 
 ## Task 3: Implement the RAG pipeline
 
@@ -151,9 +145,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
    ```
 5. Test: `GET http://localhost:3000/ask?q=Where can I find the Contoso handbook?`
 
-> Screenshot placeholder: ![](../media/lab3-t3-app.png)
-
----
+> Screenshot: ![](../media/lab3-t3-app.png)
 
 ## Task 4: Add citations & tune retrieval
 
@@ -166,9 +158,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
    - **Semantic reranking:** enable if available on your tier  
 3. Re-run the same prompts and ensure answers are grounded.
 
-> Screenshot placeholder: ![](../media/lab3-t4-citations.png)
-
----
+> Screenshot: ![](../media/lab3-t4-citations.png)
 
 ## Task 5: Expose a simple client
 
@@ -177,9 +167,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 - **.NET**: Add a minimal Razor page or serve `index.html` with a textbox → calls `/ask?q=...`  
 - **Node.js**: Serve a static `index.html` that fetches `/ask?q=...` and renders **citations**.
 
-> Screenshot placeholder: ![](../media/lab3-t5-client.png)
-
----
+> Screenshot: ![](../media/lab3-t5-client.png)
 
 ## Task 6: Evaluate & monitor
 
@@ -190,9 +178,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 3. Log latency, tokens, and search metrics in your app; iterate **topK**, prompts, and filters.  
 4. Apply **content filters** and review **Responsible AI** guidance.
 
-> Screenshot placeholder: ![](../media/lab3-t6-eval.png)
-
----
+> Screenshot: ![](../media/lab3-t6-eval.png)
 
 ## Notes
 - Start with classic RAG; move to **agentic retrieval** if you need multi-step tool use.  
