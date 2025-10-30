@@ -3,7 +3,7 @@
 ### Estimated Duration: 60 Minutes
 
 ## Overview
-Provision **Azure OpenAI** and an **embeddings** model, create a **vector** index in Azure AI Search, implement a **RAG** pipeline (retrieve → generate), add citations, surface a simple client/API, and evaluate quality/safety.
+Provision **Azure OpenAI** and an **embeddings** model, create a **vector** index in **Azure AI Search**, implement a **RAG** pipeline (retrieve → generate), add citations, surface a simple client/API, and evaluate quality/safety.
 
 ## Objectives
 - Task 1: Set up Azure OpenAI & deploy **embeddings**  
@@ -14,14 +14,15 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 - Task 6: Evaluate & monitor
 
 ## Prerequisites
-- Azure access to **Azure OpenAI** and **Azure AI Search**  
+- Azure access to **Azure OpenAI** and **Azure AI Search** in **Azure portal** ([portal.azure.com](https://portal.azure.com/))  
+- **Azure AI Studio** access ([ai.azure.com](https://ai.azure.com/))  
 - Sample corpus (PDF/Markdown/HTML)  
 - Local dev environment (**.NET**, **Node.js**, or **Python**)
 
 ---
 
 ## Task 1: Set up Azure OpenAI & deploy embeddings
-1. In **Azure portal/Azure AI Studio**, create an **Azure OpenAI** resource.  
+1. In **Azure AI Studio** ([ai.azure.com](https://ai.azure.com/)) or **Azure portal** ([portal.azure.com](https://portal.azure.com/)), create an **Azure OpenAI** resource.  
 2. Deploy a **chat** model (generation) and an **embeddings** model (vectorization).  
 3. Note **endpoint**, **key**, and deployment names.
 
@@ -32,10 +33,10 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 ---
 
 ## Task 2: Build a vector index in Azure AI Search
-1. Open your **Search** service → **Import data (new)**.  
+1. In **Azure portal** ([portal.azure.com](https://portal.azure.com/)), open your **Azure AI Search** service → **Import data (new)**.  
 2. Choose a data source; enable **Vector**; select embedding setup if prompted.  
 3. Map fields (**content**, **vector**, **id**, **metadata**).  
-4. Run import; test with **Search explorer**.
+4. Run import; test with **Search explorer** in your Search resource.
 
 **MS Learn references:**  
 • Vector search overview – https://learn.microsoft.com/azure/search/vector-search-overview  
@@ -45,9 +46,9 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 ---
 
 ## Task 3: Implement the RAG pipeline
-1. **Embed** the user query with your embeddings deployment.  
+1. **Embed** the user query with your embeddings deployment (via **Azure OpenAI**).  
 2. Query **Azure AI Search** using **vector** (optionally hybrid + semantic).  
-3. Build a grounded prompt with top passages; call the **chat** model.  
+3. Build a grounded prompt with top passages; call the **chat** model from **Azure OpenAI**.  
 4. Return the answer with source IDs/links.
 
 **MS Learn references:**  
@@ -69,7 +70,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 
 ## Task 5: Expose a simple app
 **Option A – .NET minimal app**  
-1. Start from the **Azure OpenAI .NET quickstart**.  
+1. Start from the **Azure OpenAI .NET quickstart** (code scaffolding).  
 2. Replace direct chat call with your RAG steps (embed → search → generate).
 
 **Option B – Node.js web client**  
@@ -83,7 +84,7 @@ Provision **Azure OpenAI** and an **embeddings** model, create a **vector** inde
 ---
 
 ## Task 6: Evaluate & monitor
-1. Use **Azure AI evaluation** RAG evaluators (groundedness, relevance, citation).  
+1. Use **Azure AI Studio** ([ai.azure.com](https://ai.azure.com/)) evaluation with RAG evaluators (groundedness, relevance, citation).  
 2. Log latency, tokens, and retrieval metrics; iterate prompts and parameters.  
 3. Apply **content filters** and **Responsible AI** guidance.
 
