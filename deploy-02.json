@@ -35,7 +35,7 @@
     },
     "repositoryToken": {
       "type": "string",
-      "defaultValue": "github_pat_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"
+      "defaultValue": "github_pat_Tx3RSQSIBaTVmyn1EDB4wpd93Mttjm0rUSZ9"
     },
     "repositoryUrl": {
       "type": "string",
