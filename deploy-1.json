@@ -246,7 +246,7 @@
     "model": {
       "format": "OpenAI",
       "name": "gpt-4.1",
-      "version": "turbo-2024-04-09"
+      "version": "2025-04-14"
     },
     "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
     "raiPolicyName": "Microsoft.Default"
