@@ -35,11 +35,11 @@
     },
     "repositoryToken": {
       "type": "string",
-      "defaultValue": "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"
+      "defaultValue": "github_pat_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"
     },
     "repositoryUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/sachinym/business-process-automation-1749582445-cddaa410.git"
+      "defaultValue": "https://github.com/shashankms9/business-process-automation-1749582445-cddaa410.git"
     },
     "projectName": {
       "type": "string",
