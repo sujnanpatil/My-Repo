@@ -222,14 +222,14 @@
     "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
   ],
   "sku": {
-    "name": "Standard",
+    "name": "GlobalStandard",
     "capacity": 40
   },
   "properties": {
     "model": {
       "format": "OpenAI",
       "name": "gpt-4.1-mini",
-      "version": "latest"
+      "version": "2025-04-14"
     },
     "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
     "raiPolicyName": "Microsoft.Default"
